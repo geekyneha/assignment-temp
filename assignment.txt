@@ -1,0 +1,56 @@
+useContext vs Redux
+useContext: Built-in React hook to avoid prop drilling by sharing data across components.
+
+Redux: External state management tool to handle complex global states across large applications.
+
+✅ Use useContext for small to medium apps.
+✅ Use Redux for scalable, predictable, and centralized state management.
+
+
+
+Advantages of Redux Toolkit over Redux
+Comes with pre-configured setup
+
+Supports immer (for easy immutability)
+
+Built-in DevTools integration
+
+Reduces boilerplate with createSlice
+
+Simplifies store setup with configureStore
+
+
+ What is Dispatch?
+dispatch() is used to send an action to the Redux store.
+
+That action then triggers a reducer function to update the state.
+
+
+dispatch(increment()); // example of dispatching an action
+
+What is a Reducer?
+A pure function that takes state and action, and returns a new updated state.
+
+Reducers decide how the state should change.
+
+
+(state, action) => {
+  switch(action.type) {
+    case "INCREMENT":
+      return { count: state.count + 1 };
+  }
+}
+
+
+What is a Slice?
+A slice is a piece of the Redux store.
+
+It contains:
+
+name
+
+initialState
+
+reducers (actions and logic)
+
+✅ Created using createSlice() from Redux Toolkit.
