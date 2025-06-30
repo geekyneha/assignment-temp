@@ -8,6 +8,7 @@ Redux: External state management tool to handle complex global states across lar
 
 
 
+
 Advantages of Redux Toolkit over Redux
 Comes with pre-configured setup
 
@@ -54,3 +55,42 @@ initialState
 reducers (actions and logic)
 
 ✅ Created using createSlice() from Redux Toolkit.
+
+
+What is a Selector?
+A selector is used to read data from the Redux store.
+
+We use the useSelector() hook to subscribe to store changes.
+
+
+const count = useSelector((state) => state.counter.value);
+
+
+What is createSlice() and its configuration?
+createSlice() is a method in Redux Toolkit used to create a slice of state. It takes an object with:
+
+name – name of the slice
+
+initialState – default state
+
+reducers – object of functions (actions)
+
+✅ It automatically generates:
+
+Reducer function
+
+Action creators
+
+js
+Copy
+Edit
+const counterSlice = createSlice({
+  name: 'counter',
+  initialState: { value: 0 },
+  reducers: {
+    increment: (state) => { state.value += 1 },
+  }
+});
+
+export const { increment } = counterSlice.actions;
+export default counterSlice.reducer;
