@@ -3,6 +3,8 @@ Time for the test .
  Types of testing .
 
 
- Unit testing , integrated testing
+ Unit testing , integrated testing.
+
+ Unit testing - testing one component at a time
 
 
