@@ -7,4 +7,33 @@ Time for the test .
 
  Unit testing - testing one component at a time
 
+Manual Testing
+Performed by humans without using any tools.
+
+Suitable for exploratory, usability, and ad-hoc testing.
+
+🤖 Automation Testing
+Performed using testing tools and scripts (e.g., Selenium, Cypress, JUnit).
+
+Best for regression and repetitive tests.
+
+🔹 2. Based on Testing Levels
+🏗 Unit Testing
+Tests individual units or components of the software.
+
+Usually written by developers.
+
+Tools: JUnit, NUnit, Jest.
+
+🧩 Integration Testing
+Tests the interaction between integrated units/modules.
+
+Types:
+
+Big Bang
+
+Top-down
+
+Bottom-up
+
 
