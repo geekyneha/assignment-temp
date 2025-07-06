@@ -1,0 +1,84 @@
+Integration Testing is a level of software testing where individual units or modules of a software are combined and tested as a group. The goal is to identify issues in how these modules interact with each other.
+
+✅ Why is Integration Testing Important?
+Even if modules work perfectly in isolation (after unit testing), they might fail when connected, due to:
+
+Interface mismatches
+
+Incorrect data flow
+
+Wrong API calls
+
+Timing issues or shared memory bugs
+
+🧩 Types of Integration Testing Approaches
+1. Big Bang Integration
+All modules are combined and tested together.
+
+✅ Simple to implement.
+
+❌ Hard to debug, as it’s difficult to pinpoint the issue source.
+
+2. Top-Down Integration
+Start testing from the top-level modules and integrate lower-level modules step-by-step.
+
+Uses stubs (dummy modules) for lower modules if they are not ready.
+
+✅ Early prototype can be seen.
+
+❌ Lower-level bugs may be caught late.
+
+3. Bottom-Up Integration
+Begin with lower-level modules and integrate upward.
+
+Uses drivers (dummy modules) to simulate higher modules.
+
+✅ Better for testing foundational components early.
+
+❌ User interface is tested late.
+
+4. Sandwich (Hybrid) Integration
+Combines top-down and bottom-up approaches.
+
+✅ Best of both worlds.
+
+❌ More complex to manage.
+
+🔍 Example
+Let’s say you have an e-commerce app:
+
+Module A: User Login
+
+Module B: Product Search
+
+Module C: Shopping Cart
+
+In Integration Testing:
+
+You test how Module A passes the user info to Module B.
+
+You check if adding items from B works correctly in C.
+
+🧪 Tools Used
+JUnit / TestNG (Java)
+
+Pytest (Python)
+
+Mocha / Chai (JavaScript)
+
+Postman (for API integration)
+
+SoapUI, RestAssured, etc.
+
+🧠 Best Practices
+Clearly define integration points.
+
+Use mocks, stubs, and drivers smartly.
+
+Start integration early and test incrementally.
+
+Log every interaction and assertion clearly.
+
+Let me know if you want a practical example (code-based), a diagram, or test case samples.
+
+
