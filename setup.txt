@@ -1,3 +1,5 @@
 Testing set Up for react
 
 - libraries installation 
+- Jest / jest-dom 
+- testing libraries 
