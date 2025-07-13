@@ -7,3 +7,4 @@ Testing set Up for react
 - import libraries
 - added 
 - coverage
+- should be 80-90%
