@@ -8,4 +8,5 @@ Testing set Up for react
 - added 
 - coverage
 - should be 80-90%
-testing jest
+testing jest  
+- test
