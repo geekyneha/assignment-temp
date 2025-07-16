@@ -9,4 +9,4 @@ Testing set Up for react
 - coverage
 - should be 80-90%
 testing jest  
-- test
+- test jest-dom 
