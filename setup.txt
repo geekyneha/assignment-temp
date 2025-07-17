@@ -10,3 +10,4 @@ Testing set Up for react
 - should be 80-90%
 testing jest  
 - test jest-dom 
+- test dom 
